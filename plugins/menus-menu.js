@@ -3,10 +3,10 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = imagen4;
-    // let vn = './media/menu.mp3'
-    const img = './Menu2.jpg';
+    let vn = './media/menu.mp3'
+    const img = './hardy.jpg';
     const d = new Date(new Date + 3600000);
-    const locale = 'es-ES';
+    const locale = 'en-US';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
     const date = d.toLocaleDateString(locale, {day: '2-digit', month: '2-digit', year: 'numeric'});
     const _uptime = process.uptime() * 1000;
@@ -21,29 +21,26 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `𝙏𝙃𝙀 𝙈𝙔𝙎𝙏𝙄𝘾 - 𝘽𝙊𝙏
+    const str = `_*HARDY - BOT • V2*_
 
- ▢ *Hola,* ${taguser}
+ ▢ *مرحبا* ${taguser}
 
- _*< TUS ESTADÍSTICAS />*_
+ _*< احصاءاتك />*_
 
- ▢ *Nivel:* ${level}
- ▢ *Experiencia:* ${exp}
- ▢ *Rango:* ${role}
- ▢ *Diamantes:* ${limit}
- ▢ *MysticCoins:* ${money}
- ▢ *Tokens:* ${joincount}
- ▢ *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
+ ▢ *المستوى:* ${level}
+ ▢ *النقاط:* ${exp}
+ ▢ *المجوهرات:* ${limit}
+ ▢ *النقود:* ${money}
+ ▢ *مميز:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
  ${readMore}
 
-  _*< LISTA DE MENUS />*_
+  _*< القوائم />*_
   
   ▢ _${usedPrefix}menuaudios_
   ▢ _${usedPrefix}menuanimes_
-  ▢ _${usedPrefix}labiblia_ (🔞)
 
  
- _*< SOBRE EL BOT />*_
+ _*< معلومات البوت />*_
 
   ▢ _${usedPrefix}terminosycondiciones_
   ▢ _${usedPrefix}grupos_
@@ -59,7 +56,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _bot_ (sin prefijo)
 
 
- _*< SUB-BOTS />*_
+ _*< صنع بوت خاص بك />*_
 
   ▢ _${usedPrefix}serbot --code_
   ▢ _${usedPrefix}serbot_
@@ -107,23 +104,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _${usedPrefix}slot *<apuesta>*_
   ▢ _${usedPrefix}ttt *<nombre sala>*_
   ▢ _${usedPrefix}delttt_
-  ▢ _${usedPrefix}acertijo_
-  ▢ _${usedPrefix}simi *<txt>*_
-  ▢ _${usedPrefix}top *<txt>*_
-  ▢ _${usedPrefix}topgays_
-  ▢ _${usedPrefix}topotakus_
-  ▢ _${usedPrefix}formarpareja_
-  ▢ _${usedPrefix}verdad_
-  ▢ _${usedPrefix}reto_
-  ▢ _${usedPrefix}cancion_
-  ▢ _${usedPrefix}pista_
-  ▢ _${usedPrefix}akinator_
-  ▢ _${usedPrefix}ruleta
-  ▢ _${usedPrefix}suerte
-  ▢ _${usedPrefix}wordfind_
 
 
- _*< ACT./DESACT. FUNC. />*_
+ _*< الإعدادات. />*_
 
   ▢ _${usedPrefix}enable *welcome*_
   ▢ _${usedPrefix}disable *welcome*_
@@ -153,7 +136,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _${usedPrefix}disable *antidelete*_
 
 
- _*< DESCARGAS />*_
+ _*< قائمة التنزيل />*_
 
  ▢ _${usedPrefix}play *<txt>*_
  ▢ _${usedPrefix}play2 *<txt>*_
@@ -185,18 +168,15 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  ▢ _${usedPrefix}stickerpack *<url>*_
  ▢ _${usedPrefix}wallpaper *<txt>*_ 
  ▢ _${usedPrefix}dapk2 *<url>*_
- ▢ _${usedPrefix}xnxxdl *<url>*_ (🔞)
- ▢ _${usedPrefix}xvideosdl *<url>*_ (🔞)
 
 
- _*< BUSCADORES />*_
+ _*< قائمة البحث />*_
 
   ▢ _${usedPrefix}githubsearch *<txt>*_
   ▢ _${usedPrefix}pelisplus *<txt>*_
   ▢ _${usedPrefix}modapk *<txt>*_
   ▢ _${usedPrefix}stickersearch *<txt>*_
   ▢ _${usedPrefix}stickersearch2 *<txt>*_
-  ▢ _${usedPrefix}xnxxsearch *<txt>*_
   ▢ _${usedPrefix}animeinfo *<txt>*_
   ▢ _${usedPrefix}google *<txt>*_
   ▢ _${usedPrefix}letra *<txt>*_
@@ -205,14 +185,14 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _${usedPrefix}playstore *<txt>*_
 
 
- _*< GRUPOS />*_
+ _*< اعدادات المجموعات />*_
 
   ▢ _${usedPrefix}add *num>*_
   ▢ _${usedPrefix}kick *<@tag>*_
   ▢ _${usedPrefix}kick2 *<@tag>*_
   ▢ _${usedPrefix}listanum *<txt>*_
   ▢ _${usedPrefix}kicknum *<txt>*_
-  ▢ _${usedPrefix}grupo *<abrir/cerrar>*_
+  ▢ _${usedPrefix}group *<abrir/cerrar>*_
   ▢ _${usedPrefix}grouptime *<opcion> <tiempo>*_
   ▢ _${usedPrefix}promote *<@tag>*_
   ▢ _${usedPrefix}demote *<@tag>*_
@@ -237,7 +217,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _admins *<txt>*_ (sin prefijo)
 
 
- _*< CONVERTIDORES />*_
+ _*< قائمة التحويل />*_
 
   ▢ _${usedPrefix}toanime *<img>*_
   ▢ _${usedPrefix}togifaud *<video>*_
@@ -251,7 +231,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _${usedPrefix}tts *<efecto> <txt>*_
 
 
- _*< EFECTOS & LOGOS />*_
+ _*< قائمة تعديل الصور />*_
 
   ▢ _${usedPrefix}logos *<efecto> <txt>*_
   ▢ _${usedPrefix}logochristmas *<txt>*_
@@ -265,48 +245,10 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _${usedPrefix}blur_
 
 
- _*< FRASES & TEXTOS />*_
 
-  ▢ _${usedPrefix}piropo_
-  ▢ _${usedPrefix}consejo_
-  ▢ _${usedPrefix}fraseromantica_
-  ▢ _${usedPrefix}historiaromantica_
+ _*< قائمة تعديل الأصوات />*_
 
-
- _*< ALEATORIO />*_
-
-  ▢ _${usedPrefix}kpop *<blackpink/exo/bts>*_
-  ▢ _${usedPrefix}cristianoronaldo_
-  ▢ _${usedPrefix}messi_
-  ▢ _${usedPrefix}cat_
-  ▢ _${usedPrefix}dog_
-  ▢ _${usedPrefix}meme_
-  ▢ _${usedPrefix}itzy_
-  ▢ _${usedPrefix}blackpink_
-  ▢ _${usedPrefix}navidad_
-  ▢ _${usedPrefix}wpmontaña_
-  ▢ _${usedPrefix}pubg_
-  ▢ _${usedPrefix}wpgaming_
-  ▢ _${usedPrefix}wpaesthetic_
-  ▢ _${usedPrefix}wpaesthetic2_
-  ▢ _${usedPrefix}wprandom_
-  ▢ _${usedPrefix}wallhp_
-  ▢ _${usedPrefix}wpvehiculo_
-  ▢ _${usedPrefix}wpmoto_
-  ▢ _${usedPrefix}coffee_
-  ▢ _${usedPrefix}pentol_
-  ▢ _${usedPrefix}caricatura_
-  ▢ _${usedPrefix}ciberespacio_
-  ▢ _${usedPrefix}technology_
-  ▢ _${usedPrefix}doraemon_
-  ▢ _${usedPrefix}hacker_
-  ▢ _${usedPrefix}planeta_
-  ▢ _${usedPrefix}randomprofile_
-
-
- _*< EFECTOS P. AUDIOS />*_
-
-*- Responde a un audio o nota de voz.*
+*- يجب الرد على الأوديو الذي تريد تعديله.*
 
   ▢ _${usedPrefix}bass_
   ▢ _${usedPrefix}blown_
@@ -322,14 +264,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _${usedPrefix}tupai_
 
 
- _*< CHAT ANÓNIMO />*_
-
-  ▢ _${usedPrefix}start_
-  ▢ _${usedPrefix}next_
-  ▢ _${usedPrefix}leave_
-
-
- _*< HERRAMIENTAS />*_
+ _*< الأدوات />*_
  
   ▢ _${usedPrefix}inspect *<wagc_url>*_
   ▢ _${usedPrefix}chatgpt *<txt>*_
@@ -362,31 +297,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _${usedPrefix}img *<txt>*_
 
 
- _*< ECONOMÍA />*_
-
-  ▢ _${usedPrefix}adventure_
-  ▢ _${usedPrefix}cazar_
-  ▢ _${usedPrefix}cofre_
-  ▢ _${usedPrefix}balance_
-  ▢ _${usedPrefix}claim_
-  ▢ _${usedPrefix}heal_
-  ▢ _${usedPrefix}lb_
-  ▢ _${usedPrefix}levelup_
-  ▢ _${usedPrefix}myns_
-  ▢ _${usedPrefix}perfil_
-  ▢ _${usedPrefix}work_
-  ▢ _${usedPrefix}minar_
-  ▢ _${usedPrefix}minar2_
-  ▢ _${usedPrefix}buy_
-  ▢ _${usedPrefix}buyall_
-  ▢ _${usedPrefix}verificar_
-  ▢ _${usedPrefix}robar *<cant> <@tag>*_
-  ▢ _${usedPrefix}crime
-  ▢ _${usedPrefix}transfer *<tipo> <cant> <@tag>*_
-  ▢ _${usedPrefix}unreg *<sn>*_
-
-
- _*< STICKERS />*_
+ _*< قائمة الملصقات />*_
 
   ▢ _${usedPrefix}sticker *<responder a img o video>*_
   ▢ _${usedPrefix}sticker *<url>*_
@@ -416,7 +327,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _${usedPrefix}stickerfilter *<efecto> <img>*_
 
 
- _*< PROPIETARIO Y MODS. />*_
+ _*< خاص بمالك البوت. />*_
 
   ▢ _> *<funcion>*_
   ▢ _=> *<funcion>*_
