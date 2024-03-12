@@ -11,7 +11,7 @@ global.botnumber = ""
 global.confirmCode = ""
 
 global.owner = [
-  ['212660131536', 'Aymane Touzani(GX)', true]
+  ['212660131536', 'Aymane Touzani', true]
 ];
 
 global.suittag = ['212660131536'];
