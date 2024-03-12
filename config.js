@@ -6,8 +6,9 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
-
+// Set the number you need to receive confirm code in
 global.botnumber = ""
+// dont touch this
 global.confirmCode = ""
 
 global.owner = [
