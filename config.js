@@ -7,7 +7,7 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 // Set the number you need to receive confirm code in
-global.botnumber = ""
+global.botnumber = "212778513302"
 // dont touch this
 global.confirmCode = ""
 
